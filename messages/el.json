@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "title": "PristineCleaner - Καθαρίστε την επιφάνεια εργασίας χωρίς κόπο",
+    "description": "Το PristineCleaner είναι ένα δωρεάν εργαλείο ανοιχτού κώδικα για καθαρισμό επιφάνειας εργασίας σε macOS, Windows και Linux. Σαρώνει cache, αφαιρεί ακαταστασία και ελευθερώνει χώρο δίσκου."
+  },
+  "Navbar": {
+    "logoAlt": "PristineCleaner",
+    "brand": "PristineCleaner",
+    "downloads": "Λήψεις"
+  },
+  "Footer": {
+    "brand": "PristineCleaner",
+    "copyrightBy": "© {year} από",
+    "company": "Rabin Apps LLC",
+    "licensedUnder": "διανέμεται με άδεια",
+    "license": "CC BY-NC 4.0",
+    "creativeCommonsAlt": "Creative Commons",
+    "attributionAlt": "Attribution",
+    "nonCommercialAlt": "NonCommercial",
+    "links": {
+      "github": "GitHub",
+      "downloads": "Λήψεις",
+      "paypal": "Δωρεά μέσω PayPal",
+      "coffee": "Κέρασέ μου έναν καφέ"
+    }
+  },
+  "DownloadCard": {
+    "platformDescriptions": {
+      "macos": "macOS 11 ή νεότερο (Apple Silicon και Intel)",
+      "windows": "Windows 10 ή 11 (64-bit)",
+      "linux": "Linux x86_64 (Debian/Ubuntu και RPM)"
+    },
+    "downloadFor": "Λήψη για {platform}",
+    "notAvailable": "Δεν είναι διαθέσιμο σε αυτή την έκδοση"
+  },
+  "HomePage": {
+    "hero": {
+      "logoAlt": "PristineCleaner",
+      "tagline": "Καθαρίστε την επιφάνεια εργασίας χωρίς κόπο.",
+      "description": "Ένα δωρεάν εργαλείο ανοιχτού κώδικα για καθαρισμό επιφάνειας εργασίας σε macOS, Windows και Linux. Σαρώνει cache, αφαιρεί ακαταστασία και ελευθερώνει χώρο δίσκου από ένα καθαρό, σύγχρονο περιβάλλον.",
+      "downloadFree": "Δωρεάν λήψη",
+      "viewOnGithub": "Προβολή στο GitHub",
+      "paypalAria": "Δωρεά μέσω PayPal",
+      "coffeeAria": "Κέρασέ μου έναν καφέ",
+      "coffeeAlt": "Buy Me a Coffee"
+    },
+    "features": {
+      "sectionTitle": "Όλα όσα χρειάζεστε",
+      "sectionSubtitle": "Μια πλήρης σουίτα εργαλείων για να διατηρείτε το σύστημά σας ελαφρύ και γρήγορο.",
+      "diskUsageOverview": {
+        "title": "Επισκόπηση χρήσης δίσκου",
+        "description": "Δείτε χωρητικότητα, χρησιμοποιημένο και ελεύθερο χώρο με μια ματιά και ζωντανούς δείκτες προόδου."
+      },
+      "cacheCleanup": {
+        "title": "Καθαρισμός cache",
+        "description": "Σαρώστε και αφαιρέστε cache, αρχεία καταγραφής και προσωρινά αρχεία από συνήθεις τοποθεσίες συστήματος και εφαρμογών."
+      },
+      "clutterFinder": {
+        "title": "Εντοπισμός ακαταστασίας",
+        "description": "Βρείτε μεγάλα αρχεία πάνω από ρυθμιζόμενο όριο ή περιηγηθείτε σε όλα τα αρχεία στον φάκελο Λήψεις."
+      },
+      "spaceView": {
+        "title": "Προβολή χώρου",
+        "description": "Σαρώστε τον προσωπικό σας κατάλογο φάκελο-φάκελο και δείτε ακριβώς πού πηγαίνει ο χώρος δίσκου."
+      },
+      "appManager": {
+        "title": "Διαχείριση εφαρμογών",
+        "description": "Περιηγηθείτε στις εγκατεστημένες εφαρμογές κατά μέγεθος και απεγκαταστήστε όσες δεν χρειάζεστε πλέον."
+      },
+      "safeByDesign": {
+        "title": "Ασφαλές από σχεδιασμό",
+        "description": "Τα στοιχεία μετακινούνται πρώτα στον Κάδο Ανακύκλωσης, ώστε να μπορείτε να ανακτήσετε οτιδήποτε διαγράφηκε κατά λάθος."
+      }
+    },
+    "screenshots": {
+      "title": "Στιγμιότυπα οθόνης",
+      "subtitle": "Δείτε το PristineCleaner σε δράση.",
+      "comingSoon": "Σύντομα στιγμιότυπα - προσθέστε εικόνες στο"
+    },
+    "cta": {
+      "title": "Έτοιμοι για καθάρισμα;",
+      "subtitle": "Κατεβάστε το PristineCleaner δωρεάν. Χωρίς λογαριασμό, χωρίς τηλεμετρία, χωρίς περιττά.",
+      "button": "Λήψη τελευταίας έκδοσης"
+    }
+  },
+  "DownloadsPage": {
+    "title": "Λήψεις",
+    "latestReleaseLabel": "Τελευταία έκδοση:",
+    "publishedOn": "Δημοσιεύτηκε {date}",
+    "fallbackSubtitle": "Αποκτήστε το PristineCleaner για την πλατφόρμα σας.",
+    "allAssetsTitle": "Όλα τα αρχεία έκδοσης",
+    "table": {
+      "file": "Αρχείο",
+      "size": "Μέγεθος",
+      "download": "Λήψη"
+    },
+    "emptyState": {
+      "title": "Δεν υπάρχουν εκδόσεις ακόμα",
+      "description": "Η πρώτη έκδοση δεν έχει δημοσιευτεί ακόμα. Επιστρέψτε σύντομα ή παρακολουθήστε το αποθετήριο στο GitHub για ειδοποιήσεις.",
+      "button": "Δείτε εκδόσεις στο GitHub"
+    }
+  }
+}

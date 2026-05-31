@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "title": "PristineCleaner - Nettoyez votre bureau sans effort",
+    "description": "PristineCleaner est un utilitaire gratuit et open source pour nettoyer votre bureau sur macOS, Windows et Linux. Analysez les caches, supprimez le desordre et liberez de l'espace disque."
+  },
+  "Navbar": {
+    "logoAlt": "PristineCleaner",
+    "brand": "PristineCleaner",
+    "downloads": "Telechargements"
+  },
+  "Footer": {
+    "brand": "PristineCleaner",
+    "copyrightBy": "© {year} par",
+    "company": "Rabin Apps LLC",
+    "licensedUnder": "est sous licence",
+    "license": "CC BY-NC 4.0",
+    "creativeCommonsAlt": "Creative Commons",
+    "attributionAlt": "Attribution",
+    "nonCommercialAlt": "NonCommercial",
+    "links": {
+      "github": "GitHub",
+      "downloads": "Telechargements",
+      "paypal": "Faire un don via PayPal",
+      "coffee": "Offrez-moi un cafe"
+    }
+  },
+  "DownloadCard": {
+    "platformDescriptions": {
+      "macos": "macOS 11 ou version ulterieure (Apple Silicon et Intel)",
+      "windows": "Windows 10 ou 11 (64 bits)",
+      "linux": "Linux x86_64 (Debian/Ubuntu et RPM)"
+    },
+    "downloadFor": "Telecharger pour {platform}",
+    "notAvailable": "Indisponible dans cette version"
+  },
+  "HomePage": {
+    "hero": {
+      "logoAlt": "PristineCleaner",
+      "tagline": "Nettoyez votre bureau sans effort.",
+      "description": "Un utilitaire de nettoyage de bureau gratuit et open source pour macOS, Windows et Linux. Analysez les caches, supprimez le desordre et liberez de l'espace disque depuis une interface claire et moderne.",
+      "downloadFree": "Telecharger gratuitement",
+      "viewOnGithub": "Voir sur GitHub",
+      "paypalAria": "Faire un don via PayPal",
+      "coffeeAria": "Offrez-moi un cafe",
+      "coffeeAlt": "Buy Me a Coffee"
+    },
+    "features": {
+      "sectionTitle": "Tout ce qu'il vous faut",
+      "sectionSubtitle": "Une suite complete d'outils pour garder votre systeme leger et rapide.",
+      "diskUsageOverview": {
+        "title": "Vue d'ensemble du disque",
+        "description": "Consultez capacite, espace utilise et espace libre d'un coup d'oeil avec des indicateurs en direct."
+      },
+      "cacheCleanup": {
+        "title": "Nettoyage du cache",
+        "description": "Analysez et supprimez caches, journaux et fichiers temporaires des emplacements systeme et applications courants."
+      },
+      "clutterFinder": {
+        "title": "Detecteur d'encombrement",
+        "description": "Trouvez les gros fichiers au-dessus d'un seuil configurable ou parcourez tout le dossier Telechargements."
+      },
+      "spaceView": {
+        "title": "Vue de l'espace",
+        "description": "Analysez votre dossier personnel dossier par dossier et voyez ou passe l'espace disque."
+      },
+      "appManager": {
+        "title": "Gestionnaire d'applications",
+        "description": "Parcourez les applications installees par taille et desinstallez celles dont vous n'avez plus besoin."
+      },
+      "safeByDesign": {
+        "title": "Concu pour etre sur",
+        "description": "Les elements sont d'abord deplaces vers la Corbeille, pour pouvoir recuperer toute suppression accidentelle."
+      }
+    },
+    "screenshots": {
+      "title": "Captures d'ecran",
+      "subtitle": "Voyez PristineCleaner en action.",
+      "comingSoon": "Captures a venir - ajoutez des images dans"
+    },
+    "cta": {
+      "title": "Pret a faire le menage ?",
+      "subtitle": "Telechargez PristineCleaner gratuitement. Aucun compte, aucune telemetrie, sans fioritures.",
+      "button": "Obtenir la derniere version"
+    }
+  },
+  "DownloadsPage": {
+    "title": "Telechargements",
+    "latestReleaseLabel": "Derniere version :",
+    "publishedOn": "Publiee le {date}",
+    "fallbackSubtitle": "Obtenez PristineCleaner pour votre plateforme.",
+    "allAssetsTitle": "Tous les fichiers de version",
+    "table": {
+      "file": "Fichier",
+      "size": "Taille",
+      "download": "Telecharger"
+    },
+    "emptyState": {
+      "title": "Aucune version pour le moment",
+      "description": "La premiere version n'a pas encore ete publiee. Revenez bientot ou suivez le depot sur GitHub pour etre averti.",
+      "button": "Voir les versions sur GitHub"
+    }
+  }
+}

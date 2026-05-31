@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "title": "PristineCleaner - Limpia tu escritorio sin esfuerzo",
+    "description": "PristineCleaner es una utilidad gratuita y de codigo abierto para limpiar escritorios en macOS, Windows y Linux. Escanea caches, elimina desorden y libera espacio en disco."
+  },
+  "Navbar": {
+    "logoAlt": "PristineCleaner",
+    "brand": "PristineCleaner",
+    "downloads": "Descargas"
+  },
+  "Footer": {
+    "brand": "PristineCleaner",
+    "copyrightBy": "© {year} por",
+    "company": "Rabin Apps LLC",
+    "licensedUnder": "tiene licencia",
+    "license": "CC BY-NC 4.0",
+    "creativeCommonsAlt": "Creative Commons",
+    "attributionAlt": "Atribucion",
+    "nonCommercialAlt": "NoComercial",
+    "links": {
+      "github": "GitHub",
+      "downloads": "Descargas",
+      "paypal": "Donar con PayPal",
+      "coffee": "Invitame un cafe"
+    }
+  },
+  "DownloadCard": {
+    "platformDescriptions": {
+      "macos": "macOS 11 o posterior (Apple Silicon e Intel)",
+      "windows": "Windows 10 u 11 (64 bits)",
+      "linux": "Linux x86_64 (Debian/Ubuntu y RPM)"
+    },
+    "downloadFor": "Descargar para {platform}",
+    "notAvailable": "No disponible en esta version"
+  },
+  "HomePage": {
+    "hero": {
+      "logoAlt": "PristineCleaner",
+      "tagline": "Limpia tu escritorio sin esfuerzo.",
+      "description": "Una utilidad gratuita y de codigo abierto para limpiar escritorios en macOS, Windows y Linux. Escanea caches, elimina desorden y libera espacio en disco desde una interfaz limpia y moderna.",
+      "downloadFree": "Descargar gratis",
+      "viewOnGithub": "Ver en GitHub",
+      "paypalAria": "Donar con PayPal",
+      "coffeeAria": "Invitame un cafe",
+      "coffeeAlt": "Buy Me a Coffee"
+    },
+    "features": {
+      "sectionTitle": "Todo lo que necesitas",
+      "sectionSubtitle": "Un conjunto completo de herramientas para mantener tu sistema ligero y rapido.",
+      "diskUsageOverview": {
+        "title": "Resumen de uso de disco",
+        "description": "Consulta capacidad total, espacio usado y libre de un vistazo con indicadores en vivo."
+      },
+      "cacheCleanup": {
+        "title": "Limpieza de cache",
+        "description": "Escanea y elimina caches, registros y archivos temporales de ubicaciones comunes del sistema y aplicaciones."
+      },
+      "clutterFinder": {
+        "title": "Buscador de desorden",
+        "description": "Encuentra archivos grandes por encima de un umbral configurable o revisa todo en Descargas."
+      },
+      "spaceView": {
+        "title": "Vista de espacio",
+        "description": "Escanea tu carpeta de inicio carpeta por carpeta y ve exactamente donde se usa el espacio."
+      },
+      "appManager": {
+        "title": "Administrador de apps",
+        "description": "Explora aplicaciones instaladas por tamano y desinstala las que ya no necesitas."
+      },
+      "safeByDesign": {
+        "title": "Seguro por diseno",
+        "description": "Los elementos se mueven primero a la Papelera para que puedas recuperar cualquier eliminacion accidental."
+      }
+    },
+    "screenshots": {
+      "title": "Capturas",
+      "subtitle": "Mira PristineCleaner en accion.",
+      "comingSoon": "Capturas proximamente - agrega imagenes a"
+    },
+    "cta": {
+      "title": "Listo para limpiar?",
+      "subtitle": "Descarga PristineCleaner gratis. Sin cuenta, sin telemetria y sin complicaciones.",
+      "button": "Obtener la ultima version"
+    }
+  },
+  "DownloadsPage": {
+    "title": "Descargas",
+    "latestReleaseLabel": "Ultima version:",
+    "publishedOn": "Publicada {date}",
+    "fallbackSubtitle": "Descarga PristineCleaner para tu plataforma.",
+    "allAssetsTitle": "Todos los archivos de la version",
+    "table": {
+      "file": "Archivo",
+      "size": "Tamano",
+      "download": "Descargar"
+    },
+    "emptyState": {
+      "title": "Aun no hay versiones",
+      "description": "La primera version aun no se ha publicado. Vuelve pronto o sigue el repositorio en GitHub para recibir avisos.",
+      "button": "Ver versiones en GitHub"
+    }
+  }
+}

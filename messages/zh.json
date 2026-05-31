@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "title": "PristineCleaner - 轻松清理你的桌面",
+    "description": "PristineCleaner 是一款适用于 macOS、Windows 和 Linux 的免费开源桌面清理工具。扫描缓存、清除杂项文件并释放磁盘空间。"
+  },
+  "Navbar": {
+    "logoAlt": "PristineCleaner",
+    "brand": "PristineCleaner",
+    "downloads": "下载"
+  },
+  "Footer": {
+    "brand": "PristineCleaner",
+    "copyrightBy": "© {year}",
+    "company": "Rabin Apps LLC",
+    "licensedUnder": "许可协议",
+    "license": "CC BY-NC 4.0",
+    "creativeCommonsAlt": "Creative Commons",
+    "attributionAlt": "Attribution",
+    "nonCommercialAlt": "NonCommercial",
+    "links": {
+      "github": "GitHub",
+      "downloads": "下载",
+      "paypal": "通过 PayPal 捐赠",
+      "coffee": "请我喝杯咖啡"
+    }
+  },
+  "DownloadCard": {
+    "platformDescriptions": {
+      "macos": "macOS 11 或更高版本 (Apple Silicon 和 Intel)",
+      "windows": "Windows 10 / 11 (64 位)",
+      "linux": "Linux x86_64 (Debian/Ubuntu 和 RPM)"
+    },
+    "downloadFor": "下载 {platform} 版本",
+    "notAvailable": "此版本中不可用"
+  },
+  "HomePage": {
+    "hero": {
+      "logoAlt": "PristineCleaner",
+      "tagline": "轻松清理你的桌面。",
+      "description": "一款适用于 macOS、Windows 和 Linux 的免费开源桌面清理工具。扫描缓存、清除杂项文件，并通过简洁现代的界面释放磁盘空间。",
+      "downloadFree": "免费下载",
+      "viewOnGithub": "在 GitHub 上查看",
+      "paypalAria": "通过 PayPal 捐赠",
+      "coffeeAria": "请我喝杯咖啡",
+      "coffeeAlt": "Buy Me a Coffee"
+    },
+    "features": {
+      "sectionTitle": "你需要的一切",
+      "sectionSubtitle": "完整工具集，帮助系统保持轻快高效。",
+      "diskUsageOverview": {
+        "title": "磁盘使用概览",
+        "description": "通过实时进度指示器，一眼查看磁盘容量、已用空间和可用空间。"
+      },
+      "cacheCleanup": {
+        "title": "缓存清理",
+        "description": "扫描并删除系统和常见应用目录中的缓存、日志和临时文件。"
+      },
+      "clutterFinder": {
+        "title": "杂项文件查找",
+        "description": "查找超过可配置阈值的大文件，或浏览下载文件夹中的全部内容。"
+      },
+      "spaceView": {
+        "title": "空间视图",
+        "description": "按文件夹扫描主目录，准确找出磁盘空间去向。"
+      },
+      "appManager": {
+        "title": "应用管理",
+        "description": "按大小浏览已安装应用，并卸载不再需要的程序。"
+      },
+      "safeByDesign": {
+        "title": "安全优先",
+        "description": "项目会先移动到回收站，误删时可随时恢复。"
+      }
+    },
+    "screenshots": {
+      "title": "截图",
+      "subtitle": "查看 PristineCleaner 的实际运行效果。",
+      "comingSoon": "截图即将上线 - 请将图片添加到"
+    },
+    "cta": {
+      "title": "准备开始清理了吗？",
+      "subtitle": "免费下载 PristineCleaner。无需账号，无遥测，无多余内容。",
+      "button": "获取最新版本"
+    }
+  },
+  "DownloadsPage": {
+    "title": "下载",
+    "latestReleaseLabel": "最新版本：",
+    "publishedOn": "发布日期 {date}",
+    "fallbackSubtitle": "获取适用于你平台的 PristineCleaner。",
+    "allAssetsTitle": "全部发布资源",
+    "table": {
+      "file": "文件",
+      "size": "大小",
+      "download": "下载"
+    },
+    "emptyState": {
+      "title": "尚无发布版本",
+      "description": "首个版本尚未发布。请稍后再来，或在 GitHub 上关注仓库以获取通知。",
+      "button": "在 GitHub 上查看发布"
+    }
+  }
+}

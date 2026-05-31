@@ -9,6 +9,7 @@ Marketing website for [PristineCleaner](https://github.com/RabinApps/PristineCle
 - TypeScript
 - Tailwind CSS 4
 - OpenNext for Cloudflare Workers
+- next-intl
 
 ## Local Development
 
@@ -39,12 +40,32 @@ Open http://localhost:3000.
 
 ## Project Structure
 
-- `src/app/page.tsx` - Homepage (hero, features, screenshots section).
-- `src/app/downloads/page.tsx` - Downloads page; fetches latest GitHub release and maps assets by platform.
+- `messages/` - Locale message catalogs.
+- `src/app/[locale]/layout.tsx` - Localized root layout with `NextIntlClientProvider`, metadata, and RTL handling for Hebrew.
+- `src/app/[locale]/page.tsx` - Localized homepage (hero, features, screenshots section).
+- `src/app/[locale]/downloads/page.tsx` - Localized downloads page; fetches latest GitHub release and maps assets by platform.
+- `src/i18n/routing.ts` - Supported locales and default locale.
+- `src/i18n/request.ts` - Request-scoped locale and message loading for `next-intl`.
+- `src/i18n/navigation.ts` - Locale-aware navigation wrappers.
+- `src/proxy.ts` - Locale negotiation and prefix routing middleware.
 - `src/components/Navbar.tsx` - Site navigation and donation links.
 - `src/components/DownloadCard.tsx` - Per-platform download UI card.
 - `src/app/globals.css` - Global styles and design tokens.
 - `public/` - Static assets (icons, images, screenshots).
+
+## Localization
+
+This project uses `next-intl` with locale-prefixed routes.
+
+- Default locale: `en`
+- Supported locales: `en`, `es`, `it`, `fr`, `el`, `he`, `ja`, `zh`
+- Example routes: `/en`, `/es`, `/ja/downloads`
+
+### Adding or updating locales
+
+1. Update locales in `src/i18n/routing.ts`.
+2. Add a matching message file in `messages/<locale>.json`.
+3. Ensure all locale files share the same key structure as `messages/en.json`.
 
 ## Release Download Data Source
 

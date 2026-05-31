@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "title": "PristineCleaner - Clean your desktop, effortlessly",
+    "description": "PristineCleaner is a free, open-source desktop cleaning utility for macOS, Windows, and Linux. Scan caches, remove clutter, and free up disk space."
+  },
+  "Navbar": {
+    "logoAlt": "PristineCleaner",
+    "brand": "PristineCleaner",
+    "downloads": "Downloads"
+  },
+  "Footer": {
+    "brand": "PristineCleaner",
+    "copyrightBy": "© {year} by",
+    "company": "Rabin Apps LLC",
+    "licensedUnder": "is licensed under",
+    "license": "CC BY-NC 4.0",
+    "creativeCommonsAlt": "Creative Commons",
+    "attributionAlt": "Attribution",
+    "nonCommercialAlt": "NonCommercial",
+    "links": {
+      "github": "GitHub",
+      "downloads": "Downloads",
+      "paypal": "Donate via PayPal",
+      "coffee": "Buy me a coffee"
+    }
+  },
+  "DownloadCard": {
+    "platformDescriptions": {
+      "macos": "macOS 11 or later (Apple Silicon and Intel)",
+      "windows": "Windows 10 or 11 (64-bit)",
+      "linux": "Linux x86_64 (Debian/Ubuntu and RPM)"
+    },
+    "downloadFor": "Download for {platform}",
+    "notAvailable": "Not available in this release"
+  },
+  "HomePage": {
+    "hero": {
+      "logoAlt": "PristineCleaner",
+      "tagline": "Clean your desktop, effortlessly.",
+      "description": "A free, open-source desktop cleaning utility for macOS, Windows, and Linux. Scan caches, remove clutter, and free up disk space from a clean, modern interface.",
+      "downloadFree": "Download Free",
+      "viewOnGithub": "View on GitHub",
+      "paypalAria": "Donate via PayPal",
+      "coffeeAria": "Buy me a coffee",
+      "coffeeAlt": "Buy Me a Coffee"
+    },
+    "features": {
+      "sectionTitle": "Everything you need",
+      "sectionSubtitle": "A full suite of tools to keep your system lean and fast.",
+      "diskUsageOverview": {
+        "title": "Disk Usage Overview",
+        "description": "See your disk capacity, used space, and free space at a glance with live progress indicators."
+      },
+      "cacheCleanup": {
+        "title": "Cache Cleanup",
+        "description": "Scan and remove caches, logs, and temporary files from common system and app locations."
+      },
+      "clutterFinder": {
+        "title": "Clutter Finder",
+        "description": "Find large files over a configurable threshold or browse everything in your Downloads folder."
+      },
+      "spaceView": {
+        "title": "Space View",
+        "description": "Scan your home directory folder by folder and see exactly where your disk space is going."
+      },
+      "appManager": {
+        "title": "App Manager",
+        "description": "Browse installed applications sorted by size and uninstall what you no longer need."
+      },
+      "safeByDesign": {
+        "title": "Safe by Design",
+        "description": "Items are moved to Trash or Recycle Bin first, so you can recover anything deleted by mistake."
+      }
+    },
+    "screenshots": {
+      "title": "Screenshots",
+      "subtitle": "See PristineCleaner in action.",
+      "comingSoon": "Screenshots coming soon - add images to"
+    },
+    "cta": {
+      "title": "Ready to clean up?",
+      "subtitle": "Download PristineCleaner for free. No account required, no telemetry, no nonsense.",
+      "button": "Get the latest release"
+    }
+  },
+  "DownloadsPage": {
+    "title": "Downloads",
+    "latestReleaseLabel": "Latest release:",
+    "publishedOn": "Published {date}",
+    "fallbackSubtitle": "Get PristineCleaner for your platform.",
+    "allAssetsTitle": "All release assets",
+    "table": {
+      "file": "File",
+      "size": "Size",
+      "download": "Download"
+    },
+    "emptyState": {
+      "title": "No releases yet",
+      "description": "The first release has not been published yet. Check back soon, or watch the repository on GitHub to be notified.",
+      "button": "View Releases on GitHub"
+    }
+  }
+}

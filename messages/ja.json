@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "title": "PristineCleaner - デスクトップを手間なくクリーンに",
+    "description": "PristineCleaner は macOS、Windows、Linux 向けの無料オープンソースのデスクトップクリーニングツールです。キャッシュをスキャンし、不要ファイルを削除して、ディスク容量を解放します。"
+  },
+  "Navbar": {
+    "logoAlt": "PristineCleaner",
+    "brand": "PristineCleaner",
+    "downloads": "ダウンロード"
+  },
+  "Footer": {
+    "brand": "PristineCleaner",
+    "copyrightBy": "© {year}",
+    "company": "Rabin Apps LLC",
+    "licensedUnder": "ライセンス:",
+    "license": "CC BY-NC 4.0",
+    "creativeCommonsAlt": "Creative Commons",
+    "attributionAlt": "Attribution",
+    "nonCommercialAlt": "NonCommercial",
+    "links": {
+      "github": "GitHub",
+      "downloads": "ダウンロード",
+      "paypal": "PayPal で寄付",
+      "coffee": "コーヒーをごちそうする"
+    }
+  },
+  "DownloadCard": {
+    "platformDescriptions": {
+      "macos": "macOS 11 以降 (Apple Silicon / Intel)",
+      "windows": "Windows 10 / 11 (64-bit)",
+      "linux": "Linux x86_64 (Debian/Ubuntu / RPM)"
+    },
+    "downloadFor": "{platform} 向けにダウンロード",
+    "notAvailable": "このリリースでは利用できません"
+  },
+  "HomePage": {
+    "hero": {
+      "logoAlt": "PristineCleaner",
+      "tagline": "デスクトップを、手間なくクリーンに。",
+      "description": "macOS、Windows、Linux 向けの無料オープンソース デスクトップクリーニングツール。キャッシュをスキャンし、不要ファイルを削除して、ディスク容量を解放します。",
+      "downloadFree": "無料でダウンロード",
+      "viewOnGithub": "GitHub で見る",
+      "paypalAria": "PayPal で寄付",
+      "coffeeAria": "コーヒーをごちそうする",
+      "coffeeAlt": "Buy Me a Coffee"
+    },
+    "features": {
+      "sectionTitle": "必要な機能をすべて",
+      "sectionSubtitle": "システムを軽快に保つためのフル機能ツールセット。",
+      "diskUsageOverview": {
+        "title": "ディスク使用状況の概要",
+        "description": "ディスク容量、使用量、空き容量をリアルタイムの進捗表示で一目で確認できます。"
+      },
+      "cacheCleanup": {
+        "title": "キャッシュクリーンアップ",
+        "description": "よく使われるシステムやアプリの場所をスキャンし、キャッシュ、ログ、一時ファイルを削除します。"
+      },
+      "clutterFinder": {
+        "title": "不要ファイル検索",
+        "description": "しきい値以上の大容量ファイルを見つけるか、ダウンロードフォルダ内をまとめて確認できます。"
+      },
+      "spaceView": {
+        "title": "容量ビュー",
+        "description": "ホームディレクトリをフォルダごとにスキャンし、容量を消費している場所を正確に把握できます。"
+      },
+      "appManager": {
+        "title": "アプリ管理",
+        "description": "インストール済みアプリをサイズ順に表示し、不要なものをアンインストールできます。"
+      },
+      "safeByDesign": {
+        "title": "安全設計",
+        "description": "ファイルはまずゴミ箱に移動されるため、誤って削除しても復元できます。"
+      }
+    },
+    "screenshots": {
+      "title": "スクリーンショット",
+      "subtitle": "PristineCleaner の動作画面をご覧ください。",
+      "comingSoon": "スクリーンショットは近日公開予定 - 画像を追加してください"
+    },
+    "cta": {
+      "title": "クリーンアップを始めますか？",
+      "subtitle": "PristineCleaner を無料でダウンロード。アカウント不要、テレメトリなし、余計なものなし。",
+      "button": "最新リリースを取得"
+    }
+  },
+  "DownloadsPage": {
+    "title": "ダウンロード",
+    "latestReleaseLabel": "最新リリース:",
+    "publishedOn": "公開日 {date}",
+    "fallbackSubtitle": "お使いのプラットフォーム向けに PristineCleaner を入手してください。",
+    "allAssetsTitle": "すべてのリリース資産",
+    "table": {
+      "file": "ファイル",
+      "size": "サイズ",
+      "download": "ダウンロード"
+    },
+    "emptyState": {
+      "title": "まだリリースがありません",
+      "description": "最初のリリースはまだ公開されていません。しばらくしてから再度ご確認いただくか、GitHub でリポジトリをウォッチしてください。",
+      "button": "GitHub でリリースを見る"
+    }
+  }
+}

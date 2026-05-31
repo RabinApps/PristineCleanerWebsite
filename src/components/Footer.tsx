@@ -1,6 +1,11 @@
-import Link from "next/link";
+"use client";
+
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="border-t border-border bg-surface">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-muted">
@@ -12,42 +17,42 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="underline-offset-2 hover:text-foreground hover:underline"
             >
-              PristineCleaner
+              {t("brand")}
             </a>
-            <span>© {new Date().getFullYear()} by</span>
+            <span>{t("copyrightBy", { year: new Date().getFullYear() })}</span>
             <a
               href="https://www.rabinapps.com"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 hover:text-foreground hover:underline"
             >
-              Rabin Apps LLC
+              {t("company")}
             </a>
-            <span>is licensed under</span>
+            <span>{t("licensedUnder")}</span>
             <a
               href="https://creativecommons.org/licenses/by-nc/4.0/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline-offset-2 hover:text-foreground hover:underline"
             >
-              CC BY-NC 4.0
+              {t("license")}
             </a>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
-              alt="Creative Commons"
+              alt={t("creativeCommonsAlt")}
               style={{ maxWidth: "1em", maxHeight: "1em", marginLeft: ".2em" }}
             />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
-              alt="Attribution"
+              alt={t("attributionAlt")}
               style={{ maxWidth: "1em", maxHeight: "1em", marginLeft: ".2em" }}
             />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"
-              alt="NonCommercial"
+              alt={t("nonCommercialAlt")}
               style={{ maxWidth: "1em", maxHeight: "1em", marginLeft: ".2em" }}
             />
           </p>
@@ -58,13 +63,13 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="transition-colors hover:text-foreground"
             >
-              GitHub
+              {t("links.github")}
             </a>
             <Link
               href="/downloads"
               className="transition-colors hover:text-foreground"
             >
-              Downloads
+              {t("links.downloads")}
             </Link>
             <a
               href="https://www.paypal.com/donate/?hosted_button_id=YEJ37WF4Q3HPC"
@@ -72,7 +77,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="transition-colors hover:text-foreground"
             >
-              Donate via PayPal
+              {t("links.paypal")}
             </a>
             <a
               href="https://buymeacoffee.com/rabinapps"
@@ -80,7 +85,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="transition-colors hover:text-foreground"
             >
-              Buy me a coffee
+              {t("links.coffee")}
             </a>
           </div>
         </div>

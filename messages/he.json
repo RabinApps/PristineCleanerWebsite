@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "title": "PristineCleaner - נקו את שולחן העבודה בלי מאמץ",
+    "description": "PristineCleaner הוא כלי חינמי בקוד פתוח לניקוי שולחן העבודה ב-macOS, Windows ו-Linux. סורק מטמונים, מסיר עומס ומשחרר מקום בדיסק."
+  },
+  "Navbar": {
+    "logoAlt": "PristineCleaner",
+    "brand": "PristineCleaner",
+    "downloads": "הורדות"
+  },
+  "Footer": {
+    "brand": "PristineCleaner",
+    "copyrightBy": "© {year} מאת",
+    "company": "Rabin Apps LLC",
+    "licensedUnder": "מופץ תחת רישיון",
+    "license": "CC BY-NC 4.0",
+    "creativeCommonsAlt": "Creative Commons",
+    "attributionAlt": "Attribution",
+    "nonCommercialAlt": "NonCommercial",
+    "links": {
+      "github": "GitHub",
+      "downloads": "הורדות",
+      "paypal": "תרומה דרך PayPal",
+      "coffee": "קנו לי קפה"
+    }
+  },
+  "DownloadCard": {
+    "platformDescriptions": {
+      "macos": "macOS 11 ומעלה (Apple Silicon ו-Intel)",
+      "windows": "Windows 10 או 11 (64-bit)",
+      "linux": "Linux x86_64 (Debian/Ubuntu ו-RPM)"
+    },
+    "downloadFor": "הורדה עבור {platform}",
+    "notAvailable": "לא זמין בגרסה הזו"
+  },
+  "HomePage": {
+    "hero": {
+      "logoAlt": "PristineCleaner",
+      "tagline": "נקו את שולחן העבודה בלי מאמץ.",
+      "description": "כלי חינמי בקוד פתוח לניקוי שולחן העבודה ב-macOS, Windows ו-Linux. סורק מטמונים, מסיר עומס ומשחרר מקום בדיסק בממשק נקי ומודרני.",
+      "downloadFree": "הורדה חינם",
+      "viewOnGithub": "צפייה ב-GitHub",
+      "paypalAria": "תרומה דרך PayPal",
+      "coffeeAria": "קנו לי קפה",
+      "coffeeAlt": "Buy Me a Coffee"
+    },
+    "features": {
+      "sectionTitle": "כל מה שצריך",
+      "sectionSubtitle": "חבילת כלים מלאה לשמירה על מערכת קלה ומהירה.",
+      "diskUsageOverview": {
+        "title": "סקירת שימוש בדיסק",
+        "description": "ראו את קיבולת הדיסק, השטח בשימוש והשטח הפנוי במבט אחד עם מדדי התקדמות בזמן אמת."
+      },
+      "cacheCleanup": {
+        "title": "ניקוי מטמון",
+        "description": "סרקו והסירו מטמונים, יומנים וקבצים זמניים ממיקומים נפוצים של המערכת והאפליקציות."
+      },
+      "clutterFinder": {
+        "title": "איתור עומס",
+        "description": "מצאו קבצים גדולים מעל סף שניתן להגדרה או עברו על כל התוכן בתיקיית ההורדות."
+      },
+      "spaceView": {
+        "title": "תצוגת נפח",
+        "description": "סרקו את תיקיית הבית תיקייה אחר תיקייה וראו בדיוק לאן נעלם נפח הדיסק."
+      },
+      "appManager": {
+        "title": "מנהל אפליקציות",
+        "description": "עיינו באפליקציות המותקנות לפי גודל והסירו את מה שכבר לא נחוץ."
+      },
+      "safeByDesign": {
+        "title": "בטוח כברירת מחדל",
+        "description": "פריטים מועברים קודם לסל המחזור, כך שתמיד אפשר לשחזר מחיקות שבוצעו בטעות."
+      }
+    },
+    "screenshots": {
+      "title": "צילומי מסך",
+      "subtitle": "ראו את PristineCleaner בפעולה.",
+      "comingSoon": "צילומי מסך בקרוב - הוסיפו תמונות אל"
+    },
+    "cta": {
+      "title": "מוכנים לנקות?",
+      "subtitle": "הורידו את PristineCleaner בחינם. בלי חשבון, בלי טלמטריה ובלי שטויות.",
+      "button": "קבלו את הגרסה העדכנית"
+    }
+  },
+  "DownloadsPage": {
+    "title": "הורדות",
+    "latestReleaseLabel": "הגרסה האחרונה:",
+    "publishedOn": "פורסם בתאריך {date}",
+    "fallbackSubtitle": "הורידו את PristineCleaner לפלטפורמה שלכם.",
+    "allAssetsTitle": "כל קובצי הגרסה",
+    "table": {
+      "file": "קובץ",
+      "size": "גודל",
+      "download": "הורדה"
+    },
+    "emptyState": {
+      "title": "עדיין אין גרסאות",
+      "description": "הגרסה הראשונה עדיין לא פורסמה. חזרו בקרוב או עקבו אחרי המאגר ב-GitHub כדי לקבל עדכונים.",
+      "button": "צפו בגרסאות ב-GitHub"
+    }
+  }
+}

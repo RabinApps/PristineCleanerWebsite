@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "title": "PristineCleaner - Pulisci il desktop senza sforzo",
+    "description": "PristineCleaner e un'utilita gratuita e open-source per la pulizia del desktop su macOS, Windows e Linux. Analizza cache, rimuove disordine e libera spazio su disco."
+  },
+  "Navbar": {
+    "logoAlt": "PristineCleaner",
+    "brand": "PristineCleaner",
+    "downloads": "Download"
+  },
+  "Footer": {
+    "brand": "PristineCleaner",
+    "copyrightBy": "© {year} da",
+    "company": "Rabin Apps LLC",
+    "licensedUnder": "e distribuito con licenza",
+    "license": "CC BY-NC 4.0",
+    "creativeCommonsAlt": "Creative Commons",
+    "attributionAlt": "Attribuzione",
+    "nonCommercialAlt": "NonCommerciale",
+    "links": {
+      "github": "GitHub",
+      "downloads": "Download",
+      "paypal": "Dona con PayPal",
+      "coffee": "Offrimi un caffe"
+    }
+  },
+  "DownloadCard": {
+    "platformDescriptions": {
+      "macos": "macOS 11 o successivo (Apple Silicon e Intel)",
+      "windows": "Windows 10 o 11 (64 bit)",
+      "linux": "Linux x86_64 (Debian/Ubuntu e RPM)"
+    },
+    "downloadFor": "Scarica per {platform}",
+    "notAvailable": "Non disponibile in questa release"
+  },
+  "HomePage": {
+    "hero": {
+      "logoAlt": "PristineCleaner",
+      "tagline": "Pulisci il desktop senza sforzo.",
+      "description": "Un'utilita gratuita e open-source per la pulizia del desktop su macOS, Windows e Linux. Analizza cache, rimuove disordine e libera spazio da un'interfaccia pulita e moderna.",
+      "downloadFree": "Scarica gratis",
+      "viewOnGithub": "Vedi su GitHub",
+      "paypalAria": "Dona con PayPal",
+      "coffeeAria": "Offrimi un caffe",
+      "coffeeAlt": "Buy Me a Coffee"
+    },
+    "features": {
+      "sectionTitle": "Tutto cio che ti serve",
+      "sectionSubtitle": "Una suite completa di strumenti per mantenere il sistema leggero e veloce.",
+      "diskUsageOverview": {
+        "title": "Panoramica uso disco",
+        "description": "Visualizza capacita totale, spazio usato e libero con indicatori di avanzamento in tempo reale."
+      },
+      "cacheCleanup": {
+        "title": "Pulizia cache",
+        "description": "Analizza e rimuove cache, log e file temporanei dalle posizioni piu comuni del sistema e delle app."
+      },
+      "clutterFinder": {
+        "title": "Ricerca disordine",
+        "description": "Trova file grandi oltre una soglia configurabile o sfoglia tutto nella cartella Download."
+      },
+      "spaceView": {
+        "title": "Vista spazio",
+        "description": "Analizza la home cartella per cartella e scopri esattamente dove finisce lo spazio disco."
+      },
+      "appManager": {
+        "title": "Gestione app",
+        "description": "Sfoglia le app installate ordinate per dimensione e disinstalla quelle che non ti servono piu."
+      },
+      "safeByDesign": {
+        "title": "Sicuro per design",
+        "description": "Gli elementi vengono spostati prima nel Cestino, cosi puoi recuperare eventuali eliminazioni accidentali."
+      }
+    },
+    "screenshots": {
+      "title": "Screenshot",
+      "subtitle": "Guarda PristineCleaner in azione.",
+      "comingSoon": "Screenshot in arrivo - aggiungi immagini in"
+    },
+    "cta": {
+      "title": "Pronto a fare pulizia?",
+      "subtitle": "Scarica PristineCleaner gratis. Nessun account, nessuna telemetria, nessuna complicazione.",
+      "button": "Ottieni l'ultima release"
+    }
+  },
+  "DownloadsPage": {
+    "title": "Download",
+    "latestReleaseLabel": "Ultima release:",
+    "publishedOn": "Pubblicata il {date}",
+    "fallbackSubtitle": "Scarica PristineCleaner per la tua piattaforma.",
+    "allAssetsTitle": "Tutti i file della release",
+    "table": {
+      "file": "File",
+      "size": "Dimensione",
+      "download": "Scarica"
+    },
+    "emptyState": {
+      "title": "Nessuna release",
+      "description": "La prima release non e ancora stata pubblicata. Torna presto o segui il repository su GitHub per ricevere notifiche.",
+      "button": "Vedi release su GitHub"
+    }
+  }
+}

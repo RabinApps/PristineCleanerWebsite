@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 interface DownloadCardProps {
   platform: "macOS" | "Windows" | "Linux";
   assetName: string | null;
@@ -46,47 +50,45 @@ const platformIcons: Record<DownloadCardProps["platform"], React.ReactNode> = {
   ),
 };
 
-const platformDescriptions: Record<DownloadCardProps["platform"], string> = {
-  macOS: "macOS 11 or later (Apple Silicon & Intel)",
-  Windows: "Windows 10 / 11 (64-bit)",
-  Linux: "Linux x86_64 (Debian/Ubuntu & RPM)",
-};
-
 export default function DownloadCard({
   platform,
   assetName,
   downloadUrl,
   fileSizeBytes,
 }: DownloadCardProps) {
+  const t = useTranslations("DownloadCard");
   const available = downloadUrl !== null && assetName !== null;
+  const platformDescriptions: Record<DownloadCardProps["platform"], string> = {
+    macOS: t("platformDescriptions.macos"),
+    Windows: t("platformDescriptions.windows"),
+    Linux: t("platformDescriptions.linux"),
+  };
 
   return (
-    <div className="flex flex-col gap-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 transition-colors hover:border-[var(--accent)]/50">
+    <div className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-6 transition-colors hover:border-accent/50">
       <div className="flex items-start gap-4">
-        <div className="text-[var(--accent)]">{platformIcons[platform]}</div>
+        <div className="text-accent">{platformIcons[platform]}</div>
         <div className="flex flex-col gap-1">
-          <h3 className="font-semibold text-[var(--foreground)]">{platform}</h3>
-          <p className="text-sm text-[var(--muted)]">
-            {platformDescriptions[platform]}
-          </p>
+          <h3 className="font-semibold text-foreground">{platform}</h3>
+          <p className="text-sm text-muted">{platformDescriptions[platform]}</p>
         </div>
       </div>
 
       {available ? (
         <>
-          <div className="flex flex-col gap-1 rounded-lg bg-[var(--background)] px-4 py-3">
-            <span className="truncate font-mono text-xs text-[var(--muted)]">
+          <div className="flex flex-col gap-1 rounded-lg bg-background px-4 py-3">
+            <span className="truncate font-mono text-xs text-muted">
               {assetName}
             </span>
             {fileSizeBytes !== null && (
-              <span className="text-xs text-[var(--muted)]">
+              <span className="text-xs text-muted">
                 {formatBytes(fileSizeBytes)}
               </span>
             )}
           </div>
           <a
             href={downloadUrl}
-            className="flex items-center justify-center gap-2 rounded-lg bg-[var(--accent)] px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--accent-hover)]"
+            className="flex items-center justify-center gap-2 rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
           >
             <svg
               width="16"
@@ -103,12 +105,12 @@ export default function DownloadCard({
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
-            Download for {platform}
+            {t("downloadFor", { platform })}
           </a>
         </>
       ) : (
-        <div className="flex items-center justify-center rounded-lg border border-dashed border-[var(--border)] py-4 text-sm text-[var(--muted)]">
-          Not available in this release
+        <div className="flex items-center justify-center rounded-lg border border-dashed border-border py-4 text-sm text-muted">
+          {t("notAvailable")}
         </div>
       )}
     </div>
