@@ -75,7 +75,19 @@
     "screenshots": {
       "title": "Capturas",
       "subtitle": "Mira PristineCleaner en accion.",
-      "comingSoon": "Capturas proximamente - agrega imagenes a"
+      "comingSoon": "Capturas proximamente - agrega imagenes a",
+      "previous": "Captura anterior",
+      "next": "Siguiente captura",
+      "goTo": "Ir a la captura {index}",
+      "slideLabel": "Captura {index} de {total}",
+      "alt": {
+        "home": "Pantalla de inicio de PristineCleaner",
+        "cleanup": "Pantalla de limpieza de PristineCleaner",
+        "clutter": "Pantalla de archivos innecesarios de PristineCleaner",
+        "applications": "Pantalla del administrador de aplicaciones de PristineCleaner",
+        "spaceView": "Pantalla de vista de espacio de PristineCleaner",
+        "tools": "Pantalla de herramientas de PristineCleaner"
+      }
     },
     "cta": {
       "title": "Listo para limpiar?",

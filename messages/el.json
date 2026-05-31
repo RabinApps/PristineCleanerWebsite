@@ -75,7 +75,19 @@
     "screenshots": {
       "title": "Στιγμιότυπα οθόνης",
       "subtitle": "Δείτε το PristineCleaner σε δράση.",
-      "comingSoon": "Σύντομα στιγμιότυπα - προσθέστε εικόνες στο"
+      "comingSoon": "Σύντομα στιγμιότυπα - προσθέστε εικόνες στο",
+      "previous": "Προηγούμενο στιγμιότυπο",
+      "next": "Επόμενο στιγμιότυπο",
+      "goTo": "Μετάβαση στο στιγμιότυπο {index}",
+      "slideLabel": "Στιγμιότυπο {index} από {total}",
+      "alt": {
+        "home": "Αρχική οθόνη του PristineCleaner",
+        "cleanup": "Οθόνη καθαρισμού του PristineCleaner",
+        "clutter": "Οθόνη εύρεσης αχρείαστων αρχείων του PristineCleaner",
+        "applications": "Οθόνη διαχείρισης εφαρμογών του PristineCleaner",
+        "spaceView": "Οθόνη προβολής χώρου του PristineCleaner",
+        "tools": "Οθόνη εργαλείων του PristineCleaner"
+      }
     },
     "cta": {
       "title": "Έτοιμοι για καθάρισμα;",

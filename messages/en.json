@@ -75,7 +75,19 @@
     "screenshots": {
       "title": "Screenshots",
       "subtitle": "See PristineCleaner in action.",
-      "comingSoon": "Screenshots coming soon - add images to"
+      "comingSoon": "Screenshots coming soon - add images to",
+      "previous": "Previous screenshot",
+      "next": "Next screenshot",
+      "goTo": "Go to screenshot {index}",
+      "slideLabel": "Screenshot {index} of {total}",
+      "alt": {
+        "home": "PristineCleaner home screen",
+        "cleanup": "PristineCleaner cleanup screen",
+        "clutter": "PristineCleaner clutter finder screen",
+        "applications": "PristineCleaner applications manager screen",
+        "spaceView": "PristineCleaner space view screen",
+        "tools": "PristineCleaner tools screen"
+      }
     },
     "cta": {
       "title": "Ready to clean up?",

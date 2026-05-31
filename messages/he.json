@@ -75,7 +75,19 @@
     "screenshots": {
       "title": "צילומי מסך",
       "subtitle": "ראו את PristineCleaner בפעולה.",
-      "comingSoon": "צילומי מסך בקרוב - הוסיפו תמונות אל"
+      "comingSoon": "צילומי מסך בקרוב - הוסיפו תמונות אל",
+      "previous": "צילום מסך קודם",
+      "next": "צילום מסך הבא",
+      "goTo": "מעבר לצילום מסך {index}",
+      "slideLabel": "צילום מסך {index} מתוך {total}",
+      "alt": {
+        "home": "מסך הבית של PristineCleaner",
+        "cleanup": "מסך הניקוי של PristineCleaner",
+        "clutter": "מסך איתור קבצים מיותרים של PristineCleaner",
+        "applications": "מסך מנהל האפליקציות של PristineCleaner",
+        "spaceView": "מסך תצוגת נפח של PristineCleaner",
+        "tools": "מסך הכלים של PristineCleaner"
+      }
     },
     "cta": {
       "title": "מוכנים לנקות?",

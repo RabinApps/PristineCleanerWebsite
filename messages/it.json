@@ -75,7 +75,19 @@
     "screenshots": {
       "title": "Screenshot",
       "subtitle": "Guarda PristineCleaner in azione.",
-      "comingSoon": "Screenshot in arrivo - aggiungi immagini in"
+      "comingSoon": "Screenshot in arrivo - aggiungi immagini in",
+      "previous": "Screenshot precedente",
+      "next": "Screenshot successivo",
+      "goTo": "Vai allo screenshot {index}",
+      "slideLabel": "Screenshot {index} di {total}",
+      "alt": {
+        "home": "Schermata iniziale di PristineCleaner",
+        "cleanup": "Schermata di pulizia di PristineCleaner",
+        "clutter": "Schermata ricerca file inutili di PristineCleaner",
+        "applications": "Schermata gestione applicazioni di PristineCleaner",
+        "spaceView": "Schermata vista spazio di PristineCleaner",
+        "tools": "Schermata strumenti di PristineCleaner"
+      }
     },
     "cta": {
       "title": "Pronto a fare pulizia?",

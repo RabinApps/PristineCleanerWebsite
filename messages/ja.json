@@ -75,7 +75,19 @@
     "screenshots": {
       "title": "スクリーンショット",
       "subtitle": "PristineCleaner の動作画面をご覧ください。",
-      "comingSoon": "スクリーンショットは近日公開予定 - 画像を追加してください"
+      "comingSoon": "スクリーンショットは近日公開予定 - 画像を追加してください",
+      "previous": "前のスクリーンショット",
+      "next": "次のスクリーンショット",
+      "goTo": "スクリーンショット {index} へ移動",
+      "slideLabel": "スクリーンショット {index} / {total}",
+      "alt": {
+        "home": "PristineCleaner のホーム画面",
+        "cleanup": "PristineCleaner のクリーンアップ画面",
+        "clutter": "PristineCleaner の不要ファイル検出画面",
+        "applications": "PristineCleaner のアプリ管理画面",
+        "spaceView": "PristineCleaner の容量ビュー画面",
+        "tools": "PristineCleaner のツール画面"
+      }
     },
     "cta": {
       "title": "クリーンアップを始めますか？",

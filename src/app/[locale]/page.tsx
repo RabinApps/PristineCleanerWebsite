@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import ScreenshotsCarousel from "@/components/ScreenshotsCarousel";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -261,30 +262,7 @@ export default async function HomePage({ params }: Props) {
           <p className="mb-12 text-center text-[var(--muted)]">
             {t("screenshots.subtitle")}
           </p>
-          <div className="flex items-center justify-center rounded-xl border border-dashed border-[var(--border)] bg-[var(--background)] py-20 text-center">
-            <div className="flex flex-col items-center gap-2 text-sm text-[var(--muted)]">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-[var(--border)]"
-                aria-hidden="true"
-              >
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
-              </svg>
-              <span>
-                {t("screenshots.comingSoon")}{" "}
-                <code className="font-mono text-xs">public/screenshots/</code>
-              </span>
-            </div>
-          </div>
+          <ScreenshotsCarousel />
         </div>
       </section>
 
