@@ -1,47 +1,66 @@
-# OpenNext Starter
+# PristineCleaner Website
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Marketing website for [PristineCleaner](https://github.com/RabinApps/PristineCleaner), built with Next.js (App Router) and deployed to Cloudflare using OpenNext.
 
-## Getting Started
+## Tech Stack
 
-Read the documentation at https://opennext.js.org/cloudflare.
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- OpenNext for Cloudflare Workers
 
-## Develop
+## Local Development
 
-Run the Next.js development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the dev server:
 
 ```bash
 npm run dev
-# or similar package manager command
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-## Preview
+- `npm run dev` - Run Next.js in development mode.
+- `npm run build` - Build the app for production.
+- `npm run start` - Start the production server (Node runtime).
+- `npm run lint` - Run ESLint.
+- `npm run preview` - Build with OpenNext and preview on the Cloudflare runtime locally.
+- `npm run deploy` - Build and deploy to Cloudflare.
+- `npm run upload` - Build and upload assets/bundle using OpenNext.
+- `npm run cf-typegen` - Regenerate Cloudflare environment types in `cloudflare-env.d.ts`.
 
-Preview the application locally on the Cloudflare runtime:
+## Project Structure
 
-```bash
-npm run preview
-# or similar package manager command
-```
+- `src/app/page.tsx` - Homepage (hero, features, screenshots section).
+- `src/app/downloads/page.tsx` - Downloads page; fetches latest GitHub release and maps assets by platform.
+- `src/components/Navbar.tsx` - Site navigation and donation links.
+- `src/components/DownloadCard.tsx` - Per-platform download UI card.
+- `src/app/globals.css` - Global styles and design tokens.
+- `public/` - Static assets (icons, images, screenshots).
 
-## Deploy
+## Release Download Data Source
 
-Deploy the application to Cloudflare:
+The downloads page reads release data from:
 
-```bash
-npm run deploy
-# or similar package manager command
-```
+- https://api.github.com/repos/RabinApps/PristineCleaner/releases/latest
 
-## Learn More
+Response data is revalidated every hour.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is configured for Cloudflare deployment via OpenNext.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Cloudflare config: `wrangler.jsonc`
+- OpenNext config: `open-next.config.ts`
+
+For platform-specific setup and environment details, see:
+
+- https://opennext.js.org/cloudflare
