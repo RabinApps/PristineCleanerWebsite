@@ -27,26 +27,26 @@ const platformIcons: Record<DownloadCardProps["platform"], React.ReactNode> = {
     </svg>
   ),
   Windows: (
-    <svg
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Windows_logo_-_2021.svg/960px-Windows_logo_-_2021.svg.png"
+      alt="Windows"
       width="32"
       height="32"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path d="M3 12V6.75l6-1.32v6.57H3zm17 0V5l-9 1.68V12h9zm0 1H12v5.32L21 20V13zm-18 0v5.25l6 1.32V13H2z" />
-    </svg>
+      loading="lazy"
+      decoding="async"
+      className="h-8 w-8 object-contain"
+    />
   ),
   Linux: (
-    <svg
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Icons8_flat_linux.svg/960px-Icons8_flat_linux.svg.png"
+      alt="Linux"
       width="32"
       height="32"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" />
-    </svg>
+      loading="lazy"
+      decoding="async"
+      className="h-8 w-8 object-contain"
+    />
   ),
 };
 

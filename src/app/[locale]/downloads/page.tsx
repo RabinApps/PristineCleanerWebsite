@@ -1,6 +1,8 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import DownloadCard from "@/components/DownloadCard";
 
+export const revalidate = 3600;
+
 interface GitHubAsset {
   name: string;
   browser_download_url: string;
@@ -10,6 +12,7 @@ interface GitHubAsset {
 interface GitHubRelease {
   tag_name: string;
   name: string;
+  body: string;
   published_at: string;
   html_url: string;
   assets: GitHubAsset[];
@@ -62,6 +65,7 @@ export default async function DownloadsPage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "DownloadsPage" });
 
   const release = await getLatestRelease();
+  const releaseNotes = release?.body?.trim() ?? "";
 
   const macAsset = release ? findAsset(release.assets, ".dmg") : null;
   const winAsset = release ? findAsset(release.assets, ".exe", ".msix") : null;
@@ -117,6 +121,17 @@ export default async function DownloadsPage({ params }: Props) {
               fileSizeBytes={linuxAsset?.size ?? null}
             />
           </div>
+
+          {releaseNotes.length > 0 && (
+            <section className="mt-12 rounded-xl border border-border bg-surface p-6">
+              <h2 className="mb-4 text-lg font-semibold text-foreground">
+                Release notes
+              </h2>
+              <p className="whitespace-pre-wrap text-sm leading-7 text-muted">
+                {releaseNotes}
+              </p>
+            </section>
+          )}
 
           {release.assets.length > 0 && (
             <div className="mt-12">
