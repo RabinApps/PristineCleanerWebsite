@@ -28,7 +28,11 @@ async function getLatestRelease(): Promise<GitHubRelease | null> {
       "https://api.github.com/repos/RabinApps/PristineCleaner/releases/latest",
       {
         next: { revalidate: 3600 },
-        headers: { Accept: "application/vnd.github+json" },
+        headers: {
+          Accept: "application/vnd.github+json",
+          Authorization: `Bearer ${process.env.GITHUB_PAT}`,
+          "User-Agent": "Pristine-Cleaner-Website",
+        },
       },
     );
     if (!res.ok) return null;

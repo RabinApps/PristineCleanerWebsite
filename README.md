@@ -19,6 +19,15 @@ Install dependencies:
 npm install
 ```
 
+Environment variables:
+
+Copy the example env file and populate values for local development:
+
+```bash
+cp .env.example .env.local
+# then edit .env.local with your values
+```
+
 Start the dev server:
 
 ```bash
