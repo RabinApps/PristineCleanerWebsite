@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import DownloadCard from "@/components/DownloadCard";
+import Markdown from "@/components/Markdown";
 
 export const revalidate = 3600;
 
@@ -131,9 +132,7 @@ export default async function DownloadsPage({ params }: Props) {
               <h2 className="mb-4 text-lg font-semibold text-foreground">
                 Release notes
               </h2>
-              <p className="whitespace-pre-wrap text-sm leading-7 text-muted">
-                {releaseNotes}
-              </p>
+              <Markdown>{releaseNotes}</Markdown>
             </section>
           )}
 
