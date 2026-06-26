@@ -18,25 +18,29 @@ const components: Components = {
     </h3>
   ),
   p: ({ children }) => (
-    <p className="mb-4 text-sm leading-7 text-muted last:mb-0">{children}</p>
+    <p className="mb-4 wrap-break-word text-sm leading-7 text-muted last:mb-0">
+      {children}
+    </p>
   ),
   ul: ({ children }) => (
-    <ul className="mb-4 list-disc space-y-1 pl-5 text-sm leading-7 text-muted last:mb-0">
+    <ul className="mb-4 list-disc space-y-1 wrap-break-word pl-5 text-sm leading-7 text-muted last:mb-0">
       {children}
     </ul>
   ),
   ol: ({ children }) => (
-    <ol className="mb-4 list-decimal space-y-1 pl-5 text-sm leading-7 text-muted last:mb-0">
+    <ol className="mb-4 list-decimal space-y-1 wrap-break-word pl-5 text-sm leading-7 text-muted last:mb-0">
       {children}
     </ol>
   ),
-  li: ({ children }) => <li className="text-muted">{children}</li>,
+  li: ({ children }) => (
+    <li className="wrap-break-word text-muted">{children}</li>
+  ),
   a: ({ href, children }) => (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-accent hover:underline"
+      className="wrap-break-word text-accent hover:underline"
     >
       {children}
     </a>
@@ -46,23 +50,23 @@ const components: Components = {
   ),
   em: ({ children }) => <em className="italic">{children}</em>,
   code: ({ children }) => (
-    <code className="rounded bg-surface-elevated px-1.5 py-0.5 font-mono text-xs text-foreground">
+    <code className="break-all rounded bg-surface-elevated px-1.5 py-0.5 font-mono text-xs text-foreground">
       {children}
     </code>
   ),
   pre: ({ children }) => (
-    <pre className="mb-4 overflow-x-auto rounded-lg bg-surface-elevated p-4 text-xs leading-6 text-foreground last:mb-0 [&_code]:bg-transparent [&_code]:p-0">
+    <pre className="mb-4 max-w-full overflow-x-auto rounded-lg bg-surface-elevated p-4 text-xs leading-6 text-foreground last:mb-0 [&_code]:bg-transparent [&_code]:p-0">
       {children}
     </pre>
   ),
   blockquote: ({ children }) => (
-    <blockquote className="mb-4 border-l-2 border-border pl-4 text-sm italic text-muted last:mb-0">
+    <blockquote className="mb-4 wrap-break-word border-l-2 border-border pl-4 text-sm italic text-muted last:mb-0">
       {children}
     </blockquote>
   ),
   hr: () => <hr className="my-6 border-border" />,
   table: ({ children }) => (
-    <div className="mb-4 overflow-x-auto last:mb-0">
+    <div className="mb-4 max-w-full overflow-x-auto last:mb-0">
       <table className="w-full border-collapse text-sm">{children}</table>
     </div>
   ),
@@ -72,7 +76,9 @@ const components: Components = {
     </th>
   ),
   td: ({ children }) => (
-    <td className="border border-border px-3 py-2 text-muted">{children}</td>
+    <td className="wrap-break-word border border-border px-3 py-2 text-muted">
+      {children}
+    </td>
   ),
 };
 

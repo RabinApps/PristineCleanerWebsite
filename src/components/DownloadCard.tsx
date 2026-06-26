@@ -67,16 +67,18 @@ export default function DownloadCard({
   return (
     <div className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-6 transition-colors hover:border-accent/50">
       <div className="flex items-start gap-4">
-        <div className="text-accent">{platformIcons[platform]}</div>
-        <div className="flex flex-col gap-1">
+        <div className="shrink-0 text-accent">{platformIcons[platform]}</div>
+        <div className="flex min-w-0 flex-col gap-1">
           <h3 className="font-semibold text-foreground">{platform}</h3>
-          <p className="text-sm text-muted">{platformDescriptions[platform]}</p>
+          <p className="wrap-break-word text-sm text-muted">
+            {platformDescriptions[platform]}
+          </p>
         </div>
       </div>
 
       {available ? (
         <>
-          <div className="flex flex-col gap-1 rounded-lg bg-background px-4 py-3">
+          <div className="flex min-w-0 flex-col gap-1 rounded-lg bg-background px-4 py-3">
             <span className="truncate font-mono text-xs text-muted">
               {assetName}
             </span>
