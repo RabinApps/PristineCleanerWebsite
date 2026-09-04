@@ -97,6 +97,7 @@
   },
   "DownloadsPage": {
     "title": "Descargas",
+    "loading": "Cargando la última versión…",
     "latestReleaseLabel": "Ultima version:",
     "publishedOn": "Publicada {date}",
     "fallbackSubtitle": "Descarga PristineCleaner para tu plataforma.",

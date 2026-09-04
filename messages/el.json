@@ -97,6 +97,7 @@
   },
   "DownloadsPage": {
     "title": "Λήψεις",
+    "loading": "Φόρτωση τελευταίας έκδοσης…",
     "latestReleaseLabel": "Τελευταία έκδοση:",
     "publishedOn": "Δημοσιεύτηκε {date}",
     "fallbackSubtitle": "Αποκτήστε το PristineCleaner για την πλατφόρμα σας.",

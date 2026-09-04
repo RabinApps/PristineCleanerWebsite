@@ -1,14 +1,13 @@
 # PristineCleaner Website
 
-Marketing website for [PristineCleaner](https://github.com/RabinApps/PristineCleaner), built with Next.js (App Router) and deployed to Cloudflare using OpenNext.
+Marketing website for [PristineCleaner](https://github.com/RabinApps/PristineCleaner), built with Next.js (App Router) as a static export and deployed to GitHub Pages.
 
 ## Tech Stack
 
-- Next.js 16
+- Next.js 16 (static export, `output: "export"`)
 - React 19
 - TypeScript
 - Tailwind CSS 4
-- OpenNext for Cloudflare Workers
 - next-intl
 
 ## Local Development
@@ -17,15 +16,6 @@ Install dependencies:
 
 ```bash
 npm install
-```
-
-Environment variables:
-
-Copy the example env file and populate values for local development:
-
-```bash
-cp .env.example .env.local
-# then edit .env.local with your values
 ```
 
 Start the dev server:
@@ -39,28 +29,24 @@ Open http://localhost:3000.
 ## Scripts
 
 - `npm run dev` - Run Next.js in development mode.
-- `npm run build` - Build the app for production.
-- `npm run start` - Start the production server (Node runtime).
+- `npm run build` - Build the static site into `out/`.
 - `npm run lint` - Run ESLint.
-- `npm run preview` - Build with OpenNext and preview on the Cloudflare runtime locally.
-- `npm run deploy` - Build and deploy to Cloudflare.
-- `npm run upload` - Build and upload assets/bundle using OpenNext.
-- `npm run cf-typegen` - Regenerate Cloudflare environment types in `cloudflare-env.d.ts`.
 
 ## Project Structure
 
 - `messages/` - Locale message catalogs.
+- `src/app/page.tsx` - Root page; redirects `/` to `/en`.
 - `src/app/[locale]/layout.tsx` - Localized root layout with `NextIntlClientProvider`, metadata, and RTL handling for Hebrew.
 - `src/app/[locale]/page.tsx` - Localized homepage (hero, features, screenshots section).
-- `src/app/[locale]/downloads/page.tsx` - Localized downloads page; fetches latest GitHub release and maps assets by platform.
+- `src/app/[locale]/downloads/page.tsx` - Localized downloads page shell; renders `ReleaseDownloads`.
 - `src/i18n/routing.ts` - Supported locales and default locale.
 - `src/i18n/request.ts` - Request-scoped locale and message loading for `next-intl`.
 - `src/i18n/navigation.ts` - Locale-aware navigation wrappers.
-- `src/proxy.ts` - Locale negotiation and prefix routing middleware.
 - `src/components/Navbar.tsx` - Site navigation and donation links.
 - `src/components/DownloadCard.tsx` - Per-platform download UI card.
+- `src/components/ReleaseDownloads.tsx` - Client-side fetch of the latest GitHub release and asset mapping by platform.
 - `src/app/globals.css` - Global styles and design tokens.
-- `public/` - Static assets (icons, images, screenshots).
+- `public/` - Static assets (icons, images, screenshots) and the `CNAME` file for the custom domain.
 
 ## Localization
 
@@ -78,19 +64,14 @@ This project uses `next-intl` with locale-prefixed routes.
 
 ## Release Download Data Source
 
-The downloads page reads release data from:
+The downloads page fetches release data client-side (in the browser) from:
 
 - https://api.github.com/repos/RabinApps/PristineCleaner/releases/latest
 
-Response data is revalidated every hour.
+No token is required since the repo is public; each visitor's browser makes its own request.
 
-## Deployment Notes
+## Deployment
 
-This project is configured for Cloudflare deployment via OpenNext.
+This project builds as a static export and deploys to GitHub Pages via `.github/workflows/pages-deploy.yml` on every push to `main`. The custom domain (`pristinecleaner.app`) is set via `public/CNAME`.
 
-- Cloudflare config: `wrangler.jsonc`
-- OpenNext config: `open-next.config.ts`
-
-For platform-specific setup and environment details, see:
-
-- https://opennext.js.org/cloudflare
+Repo Settings → Pages must have "Build and deployment → Source" set to **GitHub Actions**.

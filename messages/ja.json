@@ -97,6 +97,7 @@
   },
   "DownloadsPage": {
     "title": "ダウンロード",
+    "loading": "最新リリースを読み込み中…",
     "latestReleaseLabel": "最新リリース:",
     "publishedOn": "公開日 {date}",
     "fallbackSubtitle": "お使いのプラットフォーム向けに PristineCleaner を入手してください。",

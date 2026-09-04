@@ -97,6 +97,7 @@
   },
   "DownloadsPage": {
     "title": "下载",
+    "loading": "正在加载最新版本…",
     "latestReleaseLabel": "最新版本：",
     "publishedOn": "发布日期 {date}",
     "fallbackSubtitle": "获取适用于你平台的 PristineCleaner。",

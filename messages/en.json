@@ -97,6 +97,7 @@
   },
   "DownloadsPage": {
     "title": "Downloads",
+    "loading": "Loading latest release…",
     "latestReleaseLabel": "Latest release:",
     "publishedOn": "Published {date}",
     "fallbackSubtitle": "Get PristineCleaner for your platform.",

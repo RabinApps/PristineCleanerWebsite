@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
@@ -138,13 +137,11 @@ export default function ScreenshotsCarousel() {
               className="w-full shrink-0 snap-start rounded-2xl p-2"
             >
               <div className="relative aspect-[16/10] overflow-hidden rounded-xl">
-                <Image
+                <img
                   src={slide.src}
                   alt={t(`alt.${slide.key}`)}
-                  fill
-                  sizes="(max-width: 640px) 86vw, (max-width: 1024px) 76vw, 68vw"
-                  className="object-cover"
-                  priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
               </div>
             </div>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import ScreenshotsCarousel from "@/components/ScreenshotsCarousel";
@@ -218,7 +217,7 @@ export default async function HomePage({ params }: Props) {
               rel="noopener noreferrer"
               className="hover:cursor-pointer"
             >
-              <Image
+              <img
                 src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
                 alt={t("hero.coffeeAlt")}
                 width={100}

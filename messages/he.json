@@ -97,6 +97,7 @@
   },
   "DownloadsPage": {
     "title": "הורדות",
+    "loading": "טוען את הגרסה האחרונה…",
     "latestReleaseLabel": "הגרסה האחרונה:",
     "publishedOn": "פורסם בתאריך {date}",
     "fallbackSubtitle": "הורידו את PristineCleaner לפלטפורמה שלכם.",
