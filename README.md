@@ -1,10 +1,14 @@
 # PristineCleaner Website
 
-Marketing website for [PristineCleaner](https://github.com/RabinApps/PristineCleaner), built with Next.js (App Router) as a static export and deployed to GitHub Pages.
+The marketing site for [PristineCleaner](https://github.com/RabinApps/PristineCleaner), a free, open-source desktop cleaning utility for macOS, Windows, and Linux.
+
+**Live site:** [pristinecleaner.app](https://pristinecleaner.app)
+
+Built with Next.js (App Router) as a static export, translated into 8 languages via `next-intl`, and deployed to GitHub Pages.
 
 ## Tech Stack
 
-- Next.js 16 (static export, `output: "export"`)
+- Next.js 16 — static export (`output: "export"`)
 - React 19
 - TypeScript
 - Tailwind CSS 4
@@ -12,66 +16,71 @@ Marketing website for [PristineCleaner](https://github.com/RabinApps/PristineCle
 
 ## Local Development
 
-Install dependencies:
-
 ```bash
 npm install
-```
-
-Start the dev server:
-
-```bash
 npm run dev
 ```
 
-Open http://localhost:3000.
+Open http://localhost:3000 — this redirects to `/en`.
 
 ## Scripts
 
-- `npm run dev` - Run Next.js in development mode.
-- `npm run build` - Build the static site into `out/`.
-- `npm run lint` - Run ESLint.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Run Next.js in development mode |
+| `npm run build` | Build the static site into `out/` |
+| `npm run lint` | Run ESLint |
 
 ## Project Structure
 
-- `messages/` - Locale message catalogs.
-- `src/app/page.tsx` - Root page; redirects `/` to `/en`.
-- `src/app/[locale]/layout.tsx` - Localized root layout with `NextIntlClientProvider`, metadata, and RTL handling for Hebrew.
-- `src/app/[locale]/page.tsx` - Localized homepage (hero, features, screenshots section).
-- `src/app/[locale]/downloads/page.tsx` - Localized downloads page shell; renders `ReleaseDownloads`.
-- `src/i18n/routing.ts` - Supported locales and default locale.
-- `src/i18n/request.ts` - Request-scoped locale and message loading for `next-intl`.
-- `src/i18n/navigation.ts` - Locale-aware navigation wrappers.
-- `src/components/Navbar.tsx` - Site navigation and donation links.
-- `src/components/DownloadCard.tsx` - Per-platform download UI card.
-- `src/components/ReleaseDownloads.tsx` - Client-side fetch of the latest GitHub release and asset mapping by platform.
-- `src/app/globals.css` - Global styles and design tokens.
-- `public/` - Static assets (icons, images, screenshots) and the `CNAME` file for the custom domain.
+```
+src/
+  app/
+    page.tsx                    Root page; redirects "/" to "/en"
+    [locale]/
+      layout.tsx                 Localized root layout, metadata, RTL handling
+      page.tsx                   Homepage (hero, features, screenshots)
+      downloads/page.tsx         Downloads page shell
+  components/
+    Navbar.tsx                   Site navigation and donation links
+    Footer.tsx                   Footer
+    DownloadCard.tsx              Per-platform download card
+    ReleaseDownloads.tsx         Client-side fetch of the latest GitHub release
+    ScreenshotsCarousel.tsx      Homepage screenshots carousel
+    Markdown.tsx                 Renders release notes markdown
+  i18n/
+    routing.ts                   Supported locales and default locale
+    request.ts                   Request-scoped locale/message loading
+    navigation.ts                Locale-aware Link/router wrappers
+messages/                        Locale message catalogs (en, es, it, fr, el, he, ja, zh)
+public/                          Static assets (icons, screenshots) and CNAME
+```
 
 ## Localization
 
-This project uses `next-intl` with locale-prefixed routes.
+Routes are locale-prefixed via `next-intl`.
 
 - Default locale: `en`
 - Supported locales: `en`, `es`, `it`, `fr`, `el`, `he`, `ja`, `zh`
 - Example routes: `/en`, `/es`, `/ja/downloads`
 
-### Adding or updating locales
+To add or update a locale:
 
-1. Update locales in `src/i18n/routing.ts`.
-2. Add a matching message file in `messages/<locale>.json`.
-3. Ensure all locale files share the same key structure as `messages/en.json`.
+1. Update `src/i18n/routing.ts`.
+2. Add or edit `messages/<locale>.json`, keeping the same key structure as `messages/en.json`.
 
-## Release Download Data Source
+## Downloads Page
 
-The downloads page fetches release data client-side (in the browser) from:
+`ReleaseDownloads` fetches the latest release client-side, in the visitor's browser, from:
 
-- https://api.github.com/repos/RabinApps/PristineCleaner/releases/latest
+```
+https://api.github.com/repos/RabinApps/PristineCleaner/releases/latest
+```
 
-No token is required since the repo is public; each visitor's browser makes its own request.
+No API token is needed since the repo is public, and each visitor's request counts against their own IP's rate limit rather than the site's.
 
 ## Deployment
 
-This project builds as a static export and deploys to GitHub Pages via `.github/workflows/pages-deploy.yml` on every push to `main`. The custom domain (`pristinecleaner.app`) is set via `public/CNAME`.
+Pushing to `main` triggers `.github/workflows/pages-deploy.yml`, which builds the static export and publishes it to GitHub Pages. The custom domain is set via `public/CNAME`.
 
 Repo Settings → Pages must have "Build and deployment → Source" set to **GitHub Actions**.
